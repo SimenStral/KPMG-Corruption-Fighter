@@ -1,0 +1,456 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00338d 0%, #0091da 100%);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.corruptionFighter,
+.habilitetsregisteret {
+  text-align: center;
+  margin: 0;
+  font-family: "Giorgio Sans", sans-serif;
+  background: linear-gradient(30deg, #ffffff 0%, #799ea7 100%);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.corruptionFighter {
+  padding-top: 20%;
+  font-size: 58px;
+  font-weight: 800;
+}
+
+.habilitetsregisteret {
+  font-size: 38px;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  font-weight: 500;
+}
+
+.login-form input {
+  width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-left: -10%;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button styles */
+.login button,
+.newUser button,
+.login-form button {
+  width: 300px;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d9d9d9 0%, #779ca5 100%);
+  border-image-slice: 1;
+  box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+button:hover,
+.login button:hover,
+.newUser button:hover {
+  background: #444488;
+  color: white;
+  border-image: none;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #00338d;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.account-icon {
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 150px;
+  margin: -20px;
+  padding-right: 20px;
+}
+
+.account-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #00338d;
+  color: #ffffff;
+  border: 2px solid #00338d;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.account-menu a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.account-menu a:hover {
+  background-color: #005eb8;
+}
+
+.account-menu.show {
+  display: block;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.nav-buttons button.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+button.tab {
+  padding-top: 1%;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d9d9d9 0%, #779ca5 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+}
+
+button.tab.active {
+  background-color: #6d1b7b;
+}
+
+button.tab:hover {
+  background-color: #0072b8;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-container img {
+  max-width: 100%;
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.account-icon {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Section content */
+section.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  font-size: 15px;
+}
+
+.right-side {
+  font-size: 15px;
+  margin-top: 40px;
+  padding-right: 20%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.form-section,
+.info {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.form-section button {
+  width: 100%;
+  background-color: #00338d;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px 30px;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d9d9d9 0%, #779ca5 100%);
+  border-image-slice: 1;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  background-color: #00338d;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.info ul li {
+  margin-bottom: 10px;
+}
+
+.info img {
+  max-width: 35px;
+  justify-content: center;
+}
+
+.element-container {
+  display: flex;
+  justify-content: center;
+}
+
+.status-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.status-buttons {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
+}
+.status-buttons button {
+  width: 100%;
+  min-width: 150px;
+  font-size: 20px;
+  background-color: #00338d;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+  padding: 20px 30px;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d9d9d9 0%, #779ca5 100%);
+  border-image-slice: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.complete-selfreport-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.complete-selfreport-button button {
+  background-color: #00338d;
+  border-color: white;
+  border: solid;
+  color: white;
+  padding: 20px 80px;
+}
+
+.complete-selfreport-button button:hover,
+.status-buttons button:hover {
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+.overview-container {
+  background-color: #00338d;
+  box-shadow: 0px 0px 2px 2px white;
+  max-width: 1000px;
+  width: 100%;
+}
+.overview-container section {
+  margin: 15px;
+  background-color: #00338d;
+  box-shadow: 0px 0px 2px 2px white;
+  display: flex;
+  width: 100%;
+}
+
+.overview-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.overviewDiv {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.oversikt-item {
+  background-color: #005eb8;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid white;
+}
+
+.oversikt-item p {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.status {
+  background-color: #ffa500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+
+.green-check {
+  color: #28a745;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.yellow-check {
+  color: #ffa500;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.reports-container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.reports {
+  flex: 1;
+}
+.reports h2 {
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  transition: background-color 0.1s;
+}
+
+.reports h2.active {
+  background-color: #6d1b7b;
+  pointer-events: none;
+}
+
+.reports h2:hover {
+  background-color: #005eb8;
+}
+
+.toggle-content {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.toggle-content.visible {
+  display: block;
+}
+.oversiktTitle {
+  display: flex;
+  justify-content: center;
+}

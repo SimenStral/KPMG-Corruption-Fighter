@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+#profileMenu {
+  width: 61px;
+  height: 61px;
+  background: #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profileLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profileIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#profileLeft {
+  position: absolute;
+  width: 300px;
+  height: 700px;
+  left: 20px;
+  top: 170px;
+  background: #00338d;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d9d9d9 0%, #779ca5 100%);
+  border-image-slice: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#profileLeft button {
+  width: auto;
+  background-color: #00338d;
+  border: 1px solid white;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+#profilePic {
+  width: 190px;
+  height: 190px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.upload-link {
+  color: #d9d9d9;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+#profileLeftName {
+  color: #d9d9d9;
+  font-family: sans-serif;
+}
+
+#profileLeftLinks {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#profileLeftLogout {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40%;
+}
+
+.input-box {
+  position: relative;
+  width: 650px;
+  height: auto;
+  background: #00338d;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d9d9d9 0%, #779ca5 100%);
+  border-image-slice: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: sans-serif;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-box .input-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-box .input-field label {
+  color: white;
+}
+
+.input-box .input-field input {
+  flex-grow: 1;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.input-box .input-field .icon {
+  display: flex;
+  align-items: center;
+}
+
+.input-box .input-field .icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.input-box .edit-button {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-box .edit-button button {
+  background: none;
+  border: none;
+  color: white;
+  font-style: italic;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+#inputBox1 {
+  top: 110px;
+  left: 590px;
+}
+
+#inputBox2 {
+  top: 110px;
+  left: 590px;
+}
+
+.input-box .box-title {
+  color: white;
+  font-size: 20px;
+}
+
+#inputBox3 {
+  position: absolute;
+  width: 650px;
+  height: 160px;
+  left: 590px;
+  top: 710px;
+  background: #00338d;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d9d9d9 0%, #779ca5 100%);
+  border-image-slice: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#inputBox3 button {
+  width: auto;
+  background-color: #00338d;
+  border: 1px solid white;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#inputBox3 button:hover {
+  background-color: #0058b8;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+}
+
+.button-content span {
+  margin-right: 10px;
+}
+
+.button-content img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

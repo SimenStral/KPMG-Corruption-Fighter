@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/profile.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="../images/kpmg.png" alt="" />
+        <a href="../pages/yourProfile.html">HABILITETSREGISTERET</a>
+      </div>
+      <div class="account-icon" id="account-icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="account-menu" id="account-menu">
+        <a href="yourProfile.html">Din profil</a>
+        <a href="oversikt.html">Oversikt</a>
+        <a href="../index.html">Logg ut</a>
+      </div>
+    </header>
+
+    <div id="profileLeft">
+      <div id="profilePic">
+        <img src="../images/profil.png" alt="Profile Picture" />
+      </div>
+      <label for="profileImageUpload" class="upload-link">Last opp bilde</label>
+      <input type="file" id="profileImageUpload" style="display: none" />
+      <div id="profileLeftName">
+        <h2>Ola Nordmann</h2>
+      </div>
+      <div id="profileLeftLinks">
+        <button>Se profilhistorikk</button>
+        <button>Eksporter brukerdata</button>
+      </div>
+      <div id="profileLeftLogout">
+        <a href="../index.html" style="color: #d9d9d9"></a>
+          <button onclick="location.href='../index.html'">Logg ut</button></a
+        >
+      </div>
+    </div>
+
+    <div class="input-box" id="inputBox1">
+      <div class="input-field">
+        <div class="icon">
+          <img src="../images/birth.png" alt="Birth Icon" />
+        </div>
+        <label for="dob">Date of Birth:</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          readonly
+          class="prevent-selection"
+        />
+      </div>
+      <div class="input-field">
+        <div class="icon">
+          <img src="../images/adr.png" alt="Address Icon" />
+        </div>
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          readonly
+          class="prevent-selection"
+        />
+      </div>
+      <div class="input-field">
+        <div class="icon">
+          <img src="../images/tlf.png" alt="Phone Icon" />
+        </div>
+        <label for="phone">Phone Number:</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          readonly
+          class="prevent-selection"
+        />
+      </div>
+      <div class="input-field">
+        <div class="icon">
+          <img src="../images/email.png" alt="Email Icon" />
+        </div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          readonly
+          class="prevent-selection"
+        />
+      </div>
+      <div class="edit-button">
+        <button>Endre</button>
+      </div>
+    </div>
+
+    <div class="input-box" id="inputBox2">
+      <div class="box-title">Nærmeste leder</div>
+      <br />
+      <div class="input-field">
+        <div class="icon">
+          <img src="../images/leader.png" alt="Leader Icon" />
+        </div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          readonly
+          class="prevent-selection"
+        />
+      </div>
+      <div class="input-field">
+        <div class="icon">
+          <img src="../images/tlf.png" alt="Phone Icon" />
+        </div>
+        <label for="phone">Phone Number:</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          readonly
+          class="prevent-selection"
+        />
+      </div>
+      <div class="input-field">
+        <div class="icon">
+          <img src="../images/email.png" alt="Email Icon" />
+        </div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          readonly
+          class="prevent-selection"
+        />
+      </div>
+      <div class="edit-button">
+        <button>Endre</button>
+      </div>
+    </div>
+
+    <div id="inputBox3">
+      <button
+        class="create-report-button"
+        onclick="location.href='../pages/eierinteresser.html'"
+      >
+        <div class="button-content">
+          <span>Ny registrering</span>
+          <img src="../images/report.png" alt="Create Report Icon" />
+        </div>
+      </button>
+      <button
+        class="overview-button"
+        onclick="location.href='../pages/oversikt.html'"
+      >
+        <div class="button-content">
+          <span>Oversikt</span>
+          <img src="../images/folder.png" alt="Overview Icon" />
+        </div>
+      </button>
+    </div>
+
+    <script src="profile.js"></script>
+  </body>
+  <script src="../script/profile.js"></script>
+</html>

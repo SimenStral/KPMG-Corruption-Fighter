@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habilitetsregisteret</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="../images/kpmg.png" alt="" />
+        <a href="../pages/yourProfile.html">HABILITETSREGISTERET</a>
+      </div>
+      <div class="account-icon" id="account-icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="account-menu" id="account-menu">
+        <a href="yourProfile.html">Din profil</a>
+        <a href="oversikt.html">Oversikt</a>
+        <a href="../index.html">Logg ut</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="nav-buttons">
+        <button
+          onclick="location.href = 'eierinteresser.html';"
+          class="tab active"
+        >
+          Eierinteresser
+        </button>
+        <button onclick="location.href = 'roles.html';" class="tab">
+          Roller
+        </button>
+        <button onclick="location.href = 'Relasjoner.html';" class="tab">
+          Relasjoner
+        </button>
+        <button onclick="location.href = 'Annet.html';" class="tab">
+          Annet
+        </button>
+      </nav>
+      <section class="content">
+        <div class="left-side">
+          <div class="reports-container">
+            <div class="reports" data-id="Nåværende">
+              <h2 onclick="toggleContent('Nåværende');" class="active">
+                Nåværende (2)
+              </h2>
+              <div id="Nåværende-content" class="toggle-content"></div>
+            </div>
+            <div class="reports" data-id="Tidligere">
+              <h2 onclick="toggleContent('Tidligere');">Tidligere (0)</h2>
+              <div id="Tidligere-content" class="toggle-content"></div>
+            </div>
+            <div class="reports" data-id="Søknader">
+              <h2 onclick="toggleContent('Søknader');">Søknader (0)</h2>
+              <div id="Søknader-content" class="toggle-content"></div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="info-section">
+            <div class="form-section">
+              <button onclick="location.href = 'eierinteresserForm.html';">
+                + Legg til eksisterende eierinteresse
+              </button>
+              <button onclick="location.href = 'roles.html';">
+                Bekreft at du ikke har eierinteresser å oppgi
+              </button>
+            </div>
+            <div class="info">
+              <p><img src="../images/info.png" alt="" /></p>
+              <p>
+                Hvis du har andre eierinteresser enn det som fremkommer i
+                oversikten, må du registrere dette.
+              </p>
+              <ul>
+                <li>
+                  Eierandel eller eierskap av enkeltaksjer i ikke-børsnoterte
+                  selskaper må registreres. Det finnes noen minstesgrenser for
+                  eierskap, eksempelvis om du eier mer enn 5% i en
+                  familiebedrift skal dette oppgis.
+                </li>
+                <li>
+                  Eierinteresser hvor du har eierskap i et børsnotert selskap
+                  med eiersandel over 5% vil gjennom Habilitetsregisteret bli
+                  sendt til saksbehandler (HR) for vurdering.
+                </li>
+                <li>
+                  Eierskap i selskap som er børsnotert der din eiersandel er
+                  under 5% vil bli automatisk godkjent i Habilitetsregisteret.
+                </li>
+                <li>
+                  Eierinteresser i verdipapirfond trenger du ikke registrere.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../script/script.js"></script>
+    <script src="../script/reports.js"></script>
+  </body>
+</html>

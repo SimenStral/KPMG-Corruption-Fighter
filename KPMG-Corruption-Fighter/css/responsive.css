@@ -1,0 +1,94 @@
+/* 768 */
+@media screen and (max-width: 768px) {
+  section.content {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-buttons button.tab {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  button.tab {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #oversiktButton {
+    display: none;
+  }
+
+  .right-side {
+    margin-top: -20px;
+    margin-left: 15%;
+    font-size: 15px;
+  }
+
+  .left-side {
+    font-size: 12px;
+  }
+
+  .form-section,
+  .info {
+    padding: 5px;
+  }
+
+  .reports-container {
+    display: none;
+  }
+}
+/* 480px */
+@media screen and (max-width: 480px) {
+  section.content {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-buttons button.tab {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  button.tab {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .right-side {
+    margin-top: -20px;
+    margin-left: 15%;
+    font-size: 15px;
+  }
+
+  .left-side {
+    font-size: 12px;
+  }
+
+  .form-section,
+  .info {
+    padding: 5px;
+  }
+
+  .reports-container {
+    display: none;
+  }
+}
+
+input::placeholder {
+  color: #ffe2e2;
+  opacity: 0.8;
+}
+
+textarea::placeholder {
+  color: #ffe2e2;
+  opacity: 0.8;
+}

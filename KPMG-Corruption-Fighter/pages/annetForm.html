@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habilitetsregisteret</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="../images/kpmg.png" alt="" />
+        <a href="../pages/yourProfile.html">HABILITETSREGISTERET</a>
+      </div>
+      <div class="account-icon" id="account-icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="account-menu" id="account-menu">
+        <a href="yourProfile.html">Din profil</a>
+        <a href="oversikt.html">Oversikt</a>
+        <a href="../index.html">Logg ut</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="nav-buttons">
+        <button
+          onclick="location.href = 'eierinteresserForm.html';"
+          class="tab"
+        >
+          Eierinteresser
+        </button>
+        <button onclick="location.href = 'rolesForm.html';" class="tab">
+          Roller
+        </button>
+        <button onclick="location.href = 'RelasjonerForm.html';" class="tab">
+          Relasjoner
+        </button>
+        <button onclick="location.href = 'AnnetForm.html';" class="tab active">
+          Annet
+        </button>
+      </nav>
+      <div class="center-container">
+        <div class="header">
+          <h1>Legg til andre forhold</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="country">Type forhold</label>
+            <select id="country" name="country" required>
+              <option value="norway">Eiendom</option>
+              <option value="sweden">Medlemskap</option>
+              <option value="denmark">Annet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="organization-name">Beskrivelse *</label>
+            <input
+              type="text"
+              id="organization-name"
+              name="organization-name"
+              required
+              placeholder=""
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="position-from">Dato fra (ikke påkrevd)</label>
+            <input type="date" id="position-from" name="position-from" />
+          </div>
+          <div class="form-group">
+            <label for="position-to">Dato til (ikke påkrevd)</label>
+            <input type="date" id="position-to" name="position-to" />
+          </div>
+          <div class="form-group">
+            <label for="comments">Eventuell kommentar</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Skriv inn eventuelle kommentarer..."
+            ></textarea>
+          </div>
+          <div class="radio-group">
+            <label>Er forholdet relevant for habilitet? *</label>
+            <div>
+              <input
+                type="radio"
+                id="relevant-yes"
+                name="relevance"
+                value="yes"
+                required
+              />
+              <label for="relevant-yes">Ja</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="relevant-no"
+                name="relevance"
+                value="no"
+                required
+              />
+              <label for="relevant-no">Nei</label>
+            </div>
+            <div class="form-group">
+              <p class="red">* Påkrevde felter</p>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="submit">Legg til</button>
+            <button onclick="location.href = 'annet.html';">Avbryt</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../script/script.js"></script>
+  </body>
+</html>
